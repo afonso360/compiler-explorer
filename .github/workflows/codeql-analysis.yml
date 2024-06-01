@@ -12,8 +12,9 @@
 name: 'CodeQL'
 
 on:
+  workflow_dispatch:
   push:
-    branches: [main, release]
+    branches: [main, release, wasm, wasm2]
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [main]

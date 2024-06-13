@@ -138,6 +138,7 @@ export {WineVcCompiler} from './wine-vc.js';
 export {WslVcCompiler} from './wsl-vc.js';
 export {WyrmCompiler} from './wyrm.js';
 export {WasmtimeCompiler} from './wasmtime.js';
+export {WasmerCompiler} from './wasmer.js';
 export {ZigCC} from './zigcc.js';
 export {ZigCompiler} from './zig.js';
 export {ZigCXX} from './zigcxx.js';

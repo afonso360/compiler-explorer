@@ -1003,6 +1003,13 @@ export class WasmtimeParser extends BaseParser {
     }
 }
 
+export class WasmerParser extends BaseParser {
+    static override async parse(compiler) {
+        await this.getOptions(compiler, '--help');
+        return compiler;
+    }
+}
+
 export class ZigCxxParser extends ClangParser {
     static override getMainHelpOptions(): string[] {
         return ['c++', '--help'];
